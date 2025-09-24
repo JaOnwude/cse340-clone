@@ -169,7 +169,7 @@ footer {
   font-size: 0.95rem;
 }
 
-vehicle-detail-container {
+.vehicle-detail-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
