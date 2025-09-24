@@ -57,4 +57,36 @@ Util.buildClassificationGrid = async function(data){
   return grid
 }
 
+/* **************************************
+* Build the vehicle detail view HTML
+* ************************************ */
+Util.buildVehicleDetail = function(vehicle) {
+  if (!vehicle) {
+    return '<p class="notice">Sorry, vehicle not found.</p>'
+  }
+  return `
+    <div class="vehicle-detail-container">
+      <div class="vehicle-detail-image">
+        <img src="${vehicle.inv_image}" alt="Image of ${vehicle.inv_make} ${vehicle.inv_model}" />
+      </div>
+      <div class="vehicle-detail-info">
+        <h2>${vehicle.inv_year} ${vehicle.inv_make} ${vehicle.inv_model}</h2>
+        <p><strong>Price:</strong> $${new Intl.NumberFormat('en-US').format(vehicle.inv_price)}</p>
+        <p><strong>Mileage:</strong> ${new Intl.NumberFormat('en-US').format(vehicle.inv_miles)} miles</p>
+        <p><strong>Description:</strong> ${vehicle.inv_description}</p>
+        <p><strong>Color:</strong> ${vehicle.inv_color}</p>
+      </div>
+    </div>
+  `
+}
+
+/**
+ * Wrap controller functions to catch errors and pass to next()
+ */
+Util.handleErrors = function (fn) {
+  return function (req, res, next) {
+    Promise.resolve(fn(req, res, next)).catch(next)
+  }
+}
+
 module.exports = Util

@@ -169,6 +169,26 @@ footer {
   font-size: 0.95rem;
 }
 
+vehicle-detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.vehicle-detail-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.vehicle-detail-info {
+  font-size: 1.1rem;
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+} 
+
 /* Responsive styles for larger screens */
 @media screen and (min-width: 768px) {
   html {
@@ -245,4 +265,20 @@ footer {
   footer {
     font-size: 1.1rem;
   }
+
+    .vehicle-detail-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      /* flex-direction: row;
+      align-items: flex-start; */
+    }
+  
+    .vehicle-detail-image {
+      flex: 1;
+      margin-right: 2rem;
+    }
+  
+    .vehicle-detail-info {
+      flex: 2;
+    }
 }
