@@ -1,0 +1,27 @@
+<!-- filepath: c:\Users\Onwude James Uchenna\OneDrive\Documents\cse340-clone\views\account\register.ejs -->
+<section>
+  <h1><%= title %></h1>
+  <%- messages %>
+  <form id="registerForm" action="/account/register" method="post" class="account-form">
+    <label for="account_firstname">First Name</label>
+    <input type="text" id="account_firstname" name="account_firstname" required>
+
+    <label for="account_lastname">Last Name</label>
+    <input type="text" id="account_lastname" name="account_lastname" required>
+
+    <label for="account_email">Email Address</label>
+    <input type="email" id="account_email" name="account_email" required>
+
+    <label for="account_password">Password</label>
+    <input type="password" id="account_password" name="account_password" required
+      minlength="12"
+      pattern="(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[\w!@#$%^&*]{12,}"
+      title="12+ chars, 1 uppercase, 1 number, 1 special character">
+
+    <button type="submit">Register</button>
+  </form>
+  <p>
+    Already have an account?
+    <a href="/account/login">Login here</a>
+  </p>
+</section>

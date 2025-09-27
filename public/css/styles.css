@@ -189,6 +189,199 @@ footer {
   border-radius: 8px;
 } 
 
+/******* Login Form Section ***************/
+
+/* .account-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.account-form label {
+  font-weight: bold;
+}
+
+.account-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.account-form button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.account-form button:hover {
+  background: #0056b3;
+}
+
+.flash-message {
+  background: #ffe0e0;
+  color: #b30000;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+} */
+
+.account-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.account-form label {
+  font-weight: bold;
+}
+
+.account-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.account-form button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.account-form button:hover {
+  background: #0056b3;
+}
+
+/* .flash-message {
+  background: #ffe0e0;
+  color: #b30000;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+} */
+
+/* Inventory Management Page */
+.management-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  text-align: center;
+}
+
+.management-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #007bff;
+}
+
+.management-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.management-container ul li {
+  margin: 1rem 0;
+}
+
+.management-container a {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: #007bff;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.management-container a:hover {
+  background: #0056b3;
+}
+
+/* Add Classification Page */
+.classification-form-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.classification-form-container h1 {
+  color: #28a745;
+  margin-bottom: 1.5rem;
+}
+
+.classification-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.classification-form-container label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.classification-form-container input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.classification-form-container button {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+
+.classification-form-container button:hover {
+  background: #218838;
+}
+
+/* Flash messages */
+.flash-message {
+  background: #ffe0e0;
+  color: #b30000;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 /* Responsive styles for larger screens */
 @media screen and (min-width: 768px) {
   html {
